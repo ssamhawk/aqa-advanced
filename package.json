@@ -1,0 +1,22 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "QA test\r changes 29/05",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.7",
+    "prettier": "3.3.2"
+  }
+}
