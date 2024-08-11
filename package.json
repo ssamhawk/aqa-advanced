@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "precommit": "eslint .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,10 @@
     "chalk": "^5.3.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.4",
     "jest": "^29.7.0",
     "jest-html-reporters": "^3.1.7",
     "prettier": "3.3.2"
