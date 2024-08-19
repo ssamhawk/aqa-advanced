@@ -24,7 +24,7 @@ const config = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -32,7 +32,7 @@ const config = {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -193,6 +193,24 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      {
+        publicPath: './html-report',
+        filename: 'report.html',
+        expand: true,
+        pageTitle: 'My Custom Test Report',
+        customInfos: [
+          { title: 'Project:', value: 'AQA Test' },
+          { title: 'Environment', value: 'Production' },
+        ],
+        hideIcon: true,
+        openReport: true,
+      },
+    ],
+  ],
 };
 
 export default config;
