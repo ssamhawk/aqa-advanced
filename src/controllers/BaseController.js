@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-export class HttpClient {
+class HttpClient {
   constructor() {
     this._options = {
       baseURL: 'https://qauto.forstudy.space/api',
@@ -32,3 +32,5 @@ export class HttpClient {
     this._options.headers['Cookie'] = cookie;
   }
 }
+
+module.exports = { HttpClient };
