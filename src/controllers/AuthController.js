@@ -1,4 +1,6 @@
-export class AuthService extends HttpClient {
+const { HttpClient } = require('../../src/controllers/BaseController');
+
+class AuthService extends HttpClient {
   constructor() {
     super();
     this.API_AUTH_SIGNUP = 'auth/signup';
@@ -39,3 +41,5 @@ export class AuthService extends HttpClient {
     }
   }
 }
+
+module.exports = { AuthService };

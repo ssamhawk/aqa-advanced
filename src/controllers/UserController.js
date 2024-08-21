@@ -1,4 +1,6 @@
-export class UserService extends HttpClient {
+const { HttpClient } = require('../../src/controllers/BaseController');
+
+class UserService extends HttpClient {
   constructor() {
     super();
     this.API_USERS_PROFILE = 'users/profile';
@@ -13,3 +15,5 @@ export class UserService extends HttpClient {
     }
   }
 }
+
+module.exports = { UserService };
