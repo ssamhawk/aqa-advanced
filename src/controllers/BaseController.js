@@ -30,6 +30,7 @@ class HttpClient {
 
   setCookie(cookie) {
     this._options.headers['Cookie'] = cookie;
+    this._axios = axios.create(this._options);
   }
 }
 
