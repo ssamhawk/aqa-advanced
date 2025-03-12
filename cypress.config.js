@@ -8,8 +8,10 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://qauto.forstudy.space/',
     env: {
-      username: 'guest',
-      password: 'welcome2qauto',
+      username_site: 'guest',
+      password_site: 'welcome2qauto',
+      email_account: 'testqaau@test.com',
+      password_account: 'Qq121212',
     },
   },
 });

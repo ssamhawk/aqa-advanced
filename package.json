@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "precommit": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:spec": "cypress run --spec"
   },
   "keywords": [],
   "author": "",
